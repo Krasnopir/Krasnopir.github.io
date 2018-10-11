@@ -1,0 +1,61 @@
+.root
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    font-size: 0
+
+.icon
+    display: inline-block
+    vertical-align: middle
+    margin: -1px 0 0 4px
+    width: 10px
+    height: 10px
+    background: URL('../images/sprite.png')
+    background-position: -70px -57px
+
+    &:hover
+        //
+        & + .body 
+            display: block
+
+.body
+    display: none
+    position: absolute
+    bottom: 100%
+    left: 50%
+    width: 200px
+    margin: 0 0 10px -100px
+    text-align: center
+
+.text
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    background: #fcfcfc
+    padding: 5px 10px
+    border: 1px solid #ededed
+    border-radius: 3px
+    font-size: 12px
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,0.1)
+
+    &:before
+        content: ''
+        position: absolute
+        left: 50%
+        margin-left: -6px
+        top: 100%
+        border: 6px solid transparent
+        border-top-color: #ededed
+        width: 0
+        height: 0
+
+    &:after
+        content: ''
+        position: absolute
+        left: 50%
+        margin-left: -5px
+        top: 100%
+        border: 5px solid transparent
+        border-top-color: #fff
+        width: 0
+        height: 0
