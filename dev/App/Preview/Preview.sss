@@ -1,0 +1,129 @@
+.root
+    //
+
+.list
+    width: 800px
+    margin: 0 auto
+    position: relative
+    font-size: 0
+
+.item
+    position: relative
+    display: inline-block
+    vertical-align: bottom
+    border: 1px solid transparent
+    padding: 10px 20px
+    font-size: 13px
+    cursor: pointer
+
+    &:before
+        position: absolute
+        left: -1px
+        right: -1px
+        top: -1px
+        height: 2px
+        content: ''
+
+    & + &
+        margin-left: -1px
+
+.activeItem
+    border-color: #ededed #ededed #fff #ededed
+    
+    &:before
+        background: #f67c09
+
+.content
+    margin: -1px auto 0
+    margin-top: -1px
+    border-top: 1px solid #ededed
+    padding: 20px 0 0
+
+.contentWrapper
+    width: 800px
+    margin: 0 auto
+
+.sizeLink
+    color: #0670eb
+    border-bottom: 1px dotted
+    &:hover
+        cursor: pointer
+
+.sizeWrapper
+    margin: 10px 0 0 0
+    padding: 20px
+    border: 1px solid #ededed
+
+.sizeList
+    margin-left: -50px
+    font-size: 0
+
+.sizeColumn
+    display: inline-block
+    vertical-align: top
+    margin: 0 0 0 50px
+
+.sizeItem
+    //
+    & + &
+        margin-top: 10px
+
+.previewWrapper
+    overflow: hidden
+    margin: 20px 0 0 0
+    padding: 30px 0
+    background: #f6f8fd
+    text-align: center
+
+.previewList
+    margin: -20px 0
+    font-size: 0
+
+.previeItem
+    position: relative
+    display: inline-block
+    vertical-align: top
+    margin: 20px
+
+.previewHolder
+    position: relative
+    display: inline-block
+    vertical-align: middle
+
+.previewFrame
+    width: 100%
+    height: 100%
+    border: none
+
+.previewImageHolder
+    position: absolute
+    left: 0
+    top: 0
+
+.previewImage
+    vertical-align: top
+
+.htmlWrapper
+    width: 800px
+    margin: 0 auto
+    overflow: auto
+    max-height: 600px
+    box-sizing: border-box
+    border: 1px solid #ededed
+
+.htmlContent
+    display: inline-block
+    vertical-align: top
+    padding: 1.6em 1em
+    font-size: 12px
+    font-family: monospace
+    line-height: 1.6
+    background: linear-gradient(#fff 50%, #f7f7f7 50%) left top / 100% 3.2em
+
+.tumblerHolder
+    position: absolute
+    top: 0
+    right: 0
+
+.previewLoader
+    //

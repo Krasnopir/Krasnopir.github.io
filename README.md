@@ -1,2 +1,2 @@
-# Krasnopir.github.io
-banners creator
+## Сборка
+Для сборки js и css используется команда `webpack`. Можно использовать ключ -w.
