@@ -15,7 +15,7 @@ const POSITIONS = [
 const SelectPosition = (props) => (
     <div className={css.root}>
         {POSITIONS.map((row, key) => (
-            <ul className={css.row}>
+            <ul className={css.row} key={key}>
                 {row.map((position, index) => (
                     <li className={css.item} key={index}>
                         {position !== 'spacer' ? (

@@ -796,6 +796,29 @@ export default class Settings extends React.Component {
                                     </li>
                                 </ul>
                             </div>
+                            <div className={css.row}>
+                                <span className={css.label}>Язык кнопок приложений</span>
+                                <ul className={css.colorList}>
+                                    <li className={css.colorItem}>
+                                        <RadioButton
+                                            checked={settings.buttons_app_lang === 'ru'}
+                                            value='ru'
+                                            name='buttons_app_lang'
+                                            text='ru'
+                                            onChange={this.handleChange}
+                                        />
+                                    </li>
+                                    <li className={css.colorItem}>
+                                        <RadioButton
+                                            checked={settings.buttons_app_lang === 'en'}
+                                            value='en'
+                                            name='buttons_app_lang'
+                                            text='en'
+                                            onChange={this.handleChange}
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div
